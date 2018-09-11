@@ -1,0 +1,122 @@
+html,
+body {
+  width: 100%;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ margin:0px; padding:0px; 
+ overflow: hidden;
+}
+
+body {
+  text-align: center;
+}
+
+button {
+  background: #354052;
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 60px;
+  font-size: 1.6em;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+  margin-top: 500px;
+  font-family: 'Lato', Segoe UI;
+}
+
+button:hover {
+  background: #fff;
+  color: #354052;
+}
+
+button:before,
+button:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #354052;
+  transition: 400ms ease all;
+}
+
+button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+button:hover:before,
+button:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+
+#search input[type="text"] {
+  background: url(search-white.png) no-repeat 20px 15px #fcfcfc;
+  border: 1px solid #354052;
+  font: bold 12px Arial, Helvetica, Sans-serif;
+  color: #0f0f0f;
+  width: 150px;
+  padding: 16px 15px 16px 35px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+  -webkit-transition: all 0.7s ease 0s;
+  -moz-transition: all 0.7s ease 0s;
+  -o-transition: all 0.7s ease 0s;
+  transition: all 0.7s ease 0s;
+  margin-top: -500px;
+}
+
+#search input[type="text"]:focus {
+  width: 400px;
+  outline: 0
+}
+
+
+ /* Style the header */
+ .header {
+
+  background: url(img.png) no-repeat;
+  height:100%;
+  color: #ffffff;
+  margin-bottom:0px;
+  width: 300px;
+  height:60px;
+position: fixed;
+
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 50px;
+} 
+
+#home,#inscription,#affichage,#stats{
+  display:none;
+}
+

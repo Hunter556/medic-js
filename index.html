@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cabinet medical el-nakhil</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="form-style.css">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="stylesheet" type="text/css" href="affichagestyle.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--===============================================================================================-->
+    <script src="jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="ajs.js"></script>
+    <script src='renderFile.js'></script>
+</head>
+
+
+
+<body>
+        <header>
+                <div class="header" id="myHeader">
+                   
+                </div>
+                </header>
+    <div class="content">
+
+        <div id='cssmenu'>
+            <ul>
+                <li>
+
+                    <a href="#home" onclick="removeothers('home')">
+                        <span class="icone">
+                            <i class="fa fa-home"></i>HOME</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a href='#inscription' onclick="removeothers('inscription');">
+                        <span class="icone">
+                            <i class="fa fa-plus"></i>AJOUTER UN PATIENT</span>
+                    </a>
+                </li>
+                <li>
+                    <a href='#affichage' onclick="removeothers('affichage')">
+                        <span class="icone">
+                            <i class="fa fa-search"></i>RECHERCHER</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a href='#' onclick="removeothers('stats')">
+                        <span class="icone">
+                            <i class="fa fa-pie-chart"></i> STASITIQUES</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div id="main">
+
+
+            <article class="panel" id="home">
+
+            </article>
+            <article class="panel" id="inscription">
+
+                <div class="form-style-5">
+                    <form onSubmit="JavaScript:sendForm(event)">
+                        <fieldset>
+                            <legend>
+                                <span class="number"></span> Informations du patient
+                            </legend>
+                            <input type="text" id="lastname" placeholder="Nom">
+                            <input type="text" id="firstname" placeholder="Prénom">
+                            <input type="text" id="birthdate" placeholder="Année de naissance">
+
+
+                            <textarea type="text" id="comments" placeholder="Remarques" rows="10"></textarea>
+                        </fieldset>
+                        <fieldset>
+                            <button>ENREGISTRER</button>
+                        </fieldset>
+                    </form>
+
+
+            </article>
+            <article class="panel" id="affichage">
+                    
+                                                                
+                    <form method="#" action="/search" id="search">
+                        <input name="q" type="text" size="40" placeholder="Recherchez...">
+                    </form>
+         
+                <div class="limiter">
+                      
+                       
+                    <div class="container-table100">
+                        <div class="wrap-table100">
+                            <div class="table100 ver1">
+                                <div class="table100-firstcol">
+                                    
+                                    <table>
+                    
+                                        <thead>
+                                            <tr class="row100 head">
+                                                <th class="cell100 column1">Employees</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        
+                 
+                                            <tr class="row100 body">
+                                                <td class="cell100 column1">Brandon Green</td>
+                                            </tr>
+                                        
+
+                                            <tr class="row100 body">
+                                                <td class="cell100 column1">Kathy Daniels</td>
+                                            </tr>
+
+                                            <tr class="row100 body">
+                                                <td class="cell100 column1">Elizabeth Alvarado</td>
+                                            </tr>
+
+                                            <tr class="row100 body">
+                                                <td class="cell100 column1">Michael Coleman</td>
+                                            </tr>
+
+                                            <tr class="row100 body">
+                                                <td class="cell100 column1">Jason Cox</td>
+                                            </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="wrap-table100-nextcols js-pscroll">
+                                    <div class="table100-nextcols">
+                                        <table>
+                                            <thead>
+                                                <tr class="row100 head">
+                                                    <th class="cell100 column2">Position</th>
+                                                    <th class="cell100 column3">Start date</th>
+                                                    <th class="cell100 column4">Last Activity</th>
+                                                    <th class="cell100 column5">Contacts</th>
+                                                    <th class="cell100 column6">Age</th>
+                                                    <th class="cell100 column7">Address</th>
+                                                    <th class="cell100 column8">Card No</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="row100 body">
+                                                    <td class="cell100 column2">CMO</td>
+                                                    <td class="cell100 column3">16 Nov 2012</td>
+                                                    <td class="cell100 column4">16 Nov 2017</td>
+                                                    <td class="cell100 column5">brandon94@example.com</td>
+                                                    <td class="cell100 column6">30</td>
+                                                    <td class="cell100 column7">New York City, NY</td>
+                                                    <td class="cell100 column8">424242xxxxxx6262</td>
+                                                </tr>
+
+                                                <tr class="row100 body">
+                                                    <td class="cell100 column2">Marketing</td>
+                                                    <td class="cell100 column3">16 Nov 2015</td>
+                                                    <td class="cell100 column4">30 Nov 2017</td>
+                                                    <td class="cell100 column5">kathy_82@example.com</td>
+                                                    <td class="cell100 column6">26</td>
+                                                    <td class="cell100 column7">New York City, NY</td>
+                                                    <td class="cell100 column8">424242xxxxxx1616</td>
+                                                </tr>
+
+                                                <tr class="row100 body">
+                                                    <td class="cell100 column2">CFO</td>
+                                                    <td class="cell100 column3">16 Nov 2013</td>
+                                                    <td class="cell100 column4">30 Nov 2017</td>
+                                                    <td class="cell100 column5">elizabeth82@example.com</td>
+                                                    <td class="cell100 column6">32</td>
+                                                    <td class="cell100 column7">New York City, NY</td>
+                                                    <td class="cell100 column8">424242xxxxxx5326</td>
+                                                </tr>
+
+                                                <tr class="row100 body">
+                                                    <td class="cell100 column2">Designer</td>
+                                                    <td class="cell100 column3">16 Nov 2013</td>
+                                                    <td class="cell100 column4">30 Nov 2017</td>
+                                                    <td class="cell100 column5">michael94@example.com</td>
+                                                    <td class="cell100 column6">22</td>
+                                                    <td class="cell100 column7">New York City, NY</td>
+                                                    <td class="cell100 column8">424242xxxxxx6328</td>
+                                                </tr>
+
+                                                <tr class="row100 body">
+                                                    <td class="cell100 column2">Developer</td>
+                                                    <td class="cell100 column3">16 Nov 2017</td>
+                                                    <td class="cell100 column4">30 Nov 2017</td>
+                                                    <td class="cell100 column5">jasoncox@example.com</td>
+                                                    <td class="cell100 column6">25</td>
+                                                    <td class="cell100 column7">New York City, NY</td>
+                                                    <td class="cell100 column8">424242xxxxxx7648</td>
+                                                </tr>
+
+
+
+
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--===============================================================================================-->
+                <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+                <!--===============================================================================================-->
+                <script src="vendor/bootstrap/js/popper.js"></script>
+                <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+                <!--===============================================================================================-->
+                <script src="vendor/select2/select2.min.js"></script>
+                <!--===============================================================================================-->
+                <script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+                <script>
+                    $('.js-pscroll').each(function () {
+                        var ps = new PerfectScrollbar(this);
+
+                        $(window).on('resize', function () {
+                            ps.update();
+                        })
+
+                        $(this).on('ps-x-reach-start', function () {
+                            $(this).parent().find('.table100-firstcol').removeClass(
+                                'shadow-table100-firstcol');
+                        });
+
+                        $(this).on('ps-scroll-x', function () {
+                            $(this).parent().find('.table100-firstcol').addClass(
+                                'shadow-table100-firstcol');
+                        });
+
+                    });
+                </script>
+                <!--===============================================================================================-->
+                <script src="js/main.js"></script>
+
+
+
+                </div>
+            </article>
+        </div>
+
+
+        <div class="footer">
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+    </div>
+</body>
+
+
+
+</html>
